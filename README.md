@@ -37,7 +37,7 @@ Division:
     
     subchoice 3: custom range (no division by zero)
     
-Operations page: will generate random numbers according to the selected option
+Operations page: will generate random numbers according to the selected option, the user can input the result and press the "check" button
 
 Correct page: display message, have 1 button to practice same type again and another button to get to main screen
 
