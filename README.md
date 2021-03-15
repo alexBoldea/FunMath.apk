@@ -1,6 +1,9 @@
 # FunMath.apk
 Android app for practicing math, intended for use by primary school children
 
+![image](https://i.imgur.com/mjX9BFR.png)
+
+
 App outline:
 
 Main screen should provide a choice of the following exercises:
