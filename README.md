@@ -29,6 +29,6 @@ Operations page: will generate random numbers according to the selected option
 
 Correct page: display message, have 1 button to practice same type again and another button to get to main screen
 
-Incorrect page: display message, have 1 button to try again with the same numbers and another to get to main screen
+Incorrect page: display message, have 1 button to try again with the same numbers and another to get to main screen 
 
 
