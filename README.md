@@ -2,9 +2,13 @@
 Android app for practicing math, intended for use by primary school children
 
 Main menu:
+
+
 ![image](https://i.imgur.com/hedPC5F.png)
 
 Level select:
+
+
 ![image](https://i.imgur.com/SVkHKyn.png)
 
 App outline:
