@@ -17,7 +17,7 @@ Main screen should provide a choice of the following exercises:
 
 Addition:
 
-    subchoice 1: basic level (random integers 1 to 9)
+    subchoice 1: basic level (random integers 1 to 9) - DONE
     
     subchoice 2: advanced (random integers 10 to 99)
     
