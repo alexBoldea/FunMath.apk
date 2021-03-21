@@ -9,7 +9,7 @@ Main menu:
 Level select:
 
 
-![image](https://i.imgur.com/SVkHKyn.png)
+![image](https://i.imgur.com/mD8HCgL.png)
 
 App outline:
 
@@ -19,7 +19,7 @@ Addition:
 
     subchoice 1: basic level (random integers 1 to 9) - DONE
     
-    subchoice 2: advanced (random integers 10 to 99)
+    subchoice 2: advanced (random integers 10 to 99) - DONE
     
     subchoice 3: custom range (user's choice up to 9 chars)
     
