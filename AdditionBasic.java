@@ -2,12 +2,16 @@ package com.example.funmathv2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class AdditionBasic extends AppCompatActivity {
 
@@ -35,13 +39,35 @@ public class AdditionBasic extends AppCompatActivity {
 
         int addBasicCorrectAnswer = addBasicFirst + addBasicSecond;
 
+        EditText AddBasicAnswer = (EditText) findViewById(R.id.AddBasicAnswerEditText);
+        AddBasicAnswer.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                String enteredString = AddBasicAnswer.getText().toString();
+                if (enteredString.startsWith("0")){
+                    if(enteredString.length() > 0){
+                        AddBasicAnswer.setText(enteredString.substring(1));
+                    } else {
+                        AddBasicAnswer.setText("");
+                    }
+                }
+            }
+        });
+
         Button buttonAdditionBasicCheck = (Button) findViewById(R.id.buttonAdditionBasicCheck);
         buttonAdditionBasicCheck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText AddBasicAnswerEditText = (EditText) findViewById(R.id.AddBasicAnswerEditText);
                 try{
-                    int answer = Integer.parseInt(AddBasicAnswerEditText.getText().toString());
+                    int answer = Integer.parseInt(AddBasicAnswer.getText().toString());
                     if(answer == addBasicCorrectAnswer){
                         Intent startAddBasicCorrect = new Intent(getApplicationContext(), AdditionBasicCorrect.class);
                         startActivity(startAddBasicCorrect);
