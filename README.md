@@ -11,6 +11,11 @@ Level select:
 
 ![image](https://i.imgur.com/mD8HCgL.png)
 
+Addition page 2:
+
+
+![image](https://i.imgur.com/fIERLde.png)
+
 App outline:
 
 Main screen should provide a choice of the following exercises:
