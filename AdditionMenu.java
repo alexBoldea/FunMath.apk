@@ -22,5 +22,14 @@ public class AdditionMenu extends AppCompatActivity {
                 startActivity(startAdditionBasic);
             }
         });
+
+        Button buttonAdditionAdvanced = (Button) findViewById(R.id.buttonAdditionAdvanced);
+        buttonAdditionAdvanced.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startAdditionAdv = new Intent(getApplicationContext(), AdditionAdv.class);
+                startActivity(startAdditionAdv);
+            }
+        });
     }
 }
