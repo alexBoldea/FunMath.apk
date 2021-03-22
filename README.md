@@ -30,7 +30,7 @@ Addition:
     
 Subtraction:
 
-    subchoice 1: basic level (random integer 1 to 19, always positive) - DONE
+    subchoice 1: basic level (random integer 1 to 20, always positive) - DONE
     
     subchoice 2: advanced (10 to 99, always positive)
     
