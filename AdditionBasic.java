@@ -26,21 +26,21 @@ public class AdditionBasic extends AppCompatActivity {
         int addBasicFirst;
         int addBasicSecond;
 
-        if ((getIntent().hasExtra(("funMath.addBFirstNumber")) && (getIntent().hasExtra("funMath.addBSecondNumber")))) {
-            addBasicFirst = getIntent().getExtras().getInt("funMath.addBFirstNumber"); // to be the same names in incorrect.class
-            addBasicSecond = getIntent().getExtras().getInt("funMath.addBSecondNumber");
+        if ((getIntent().hasExtra(("funMath.subBFirstNumber")) && (getIntent().hasExtra("funMath.subBSecondNumber")))) {
+            subBasicFirst = getIntent().getExtras().getInt("funMath.subBFirstNumber"); // to be the same names in incorrect.class
+            subBasicSecond = getIntent().getExtras().getInt("funMath.subBSecondNumber");
         } else {
-            addBasicFirst = 1 + (int)(Math.random()*9);
-            addBasicSecond = 1 + (int)(Math.random()*9);
+            subBasicSecond = 1 + (int)(Math.random()*9);
+            subBasicFirst = subBasicSecond + (int)(Math.random()*9);
         }
 
-        AddBasicFirstNumber.setText(addBasicFirst + "");
-        AddBasicSecondNumber.setText(addBasicSecond + "");
+        SubBasicFirstNumber.setText(subBasicFirst + "");
+        SubBasicSecondNumber.setText(subBasicSecond + "");
 
-        int addBasicCorrectAnswer = addBasicFirst + addBasicSecond;
+        int subBasicCorrectAnswer = subBasicFirst - subBasicSecond;
 
-        EditText AddBasicAnswer = (EditText) findViewById(R.id.AddBasicAnswerEditText);
-        AddBasicAnswer.addTextChangedListener(new TextWatcher() {
+        EditText SubBasicAnswer = (EditText) findViewById(R.id.SubBasicAnswerEditText);
+        SubBasicAnswer.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
             }
@@ -51,17 +51,15 @@ public class AdditionBasic extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                String enteredString = AddBasicAnswer.getText().toString();
+                String enteredString = SubBasicAnswer.getText().toString();
                 if (enteredString.startsWith("0")){
-                    if(enteredString.length() > 0){
-                        AddBasicAnswer.setText(enteredString.substring(1));
-                    } else {
-                        AddBasicAnswer.setText("");
+                    if(enteredString.length() > 1){
+                        SubBasicAnswer.setText(enteredString.substring(1));
                     }
                 }
             }
         });
-
+        
         Button buttonAdditionBasicCheck = (Button) findViewById(R.id.buttonAdditionBasicCheck);
         buttonAdditionBasicCheck.setOnClickListener(new View.OnClickListener() {
             @Override
