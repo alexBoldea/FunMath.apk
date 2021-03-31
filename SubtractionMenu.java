@@ -22,5 +22,14 @@ public class SubtractionMenu extends AppCompatActivity {
                 startActivity(startSubtractionBasic);
             }
         });
+
+        Button buttonSubtractionAdv = (Button) findViewById(R.id.buttonSubtractionAdv);
+        buttonSubtractionAdv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startSubtractionAdv = new Intent(getApplicationContext(), SubtractionAdv.class);
+                startActivity(startSubtractionAdv);
+            }
+        });
     }
 }
