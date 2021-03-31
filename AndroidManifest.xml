@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FunMathV2">
-        <activity android:name=".SubtractionBasicIncorrect"></activity>
+        <activity android:name=".SubtractionAdvIncorrect"></activity>
+        <activity android:name=".SubtractionAdvCorrect" />
+        <activity android:name=".SubtractionAdv" />
+        <activity android:name=".SubtractionBasicIncorrect" />
         <activity android:name=".SubtractionBasicCorrect" />
         <activity android:name=".SubtractionBasic" />
         <activity android:name=".DivisionBasic" />
