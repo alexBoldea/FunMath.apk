@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_adv_choice"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSubtractionAdvBack"
+        android:layout_width="262dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="#0c5dad"
+        android:elevation="15dp"
+        android:fontFamily="casual"
+        android:text="Back to menu"
+        android:textAllCaps="false"
+        android:textColor="#FFEEBA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#A8433103" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSubtractionAdvTryAgain"
+        android:layout_width="262dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="#ffff5c"
+        android:elevation="15dp"
+        android:fontFamily="casual"
+        android:text="Try again"
+        android:textAllCaps="false"
+        android:textColor="#010101"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSubtractionAdvBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#A8B18820" />
+
+    <TextView
+        android:id="@+id/SubAdvGz"
+        android:layout_width="371dp"
+        android:layout_height="318dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="casual"
+        android:text="Give it another try, you can do it!"
+        android:textAlignment="center"
+        android:textColor="#C1F4033B"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
